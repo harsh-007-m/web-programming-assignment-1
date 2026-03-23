@@ -1,0 +1,98 @@
+body{
+    margin:10px;
+    background-color: aquamarine;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  background-color: salmon;
+  margin-bottom: 10px;
+  border-radius: 17px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 300px;
+  padding: 10px;
+  margin: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+  background-color: rgb(245, 146, 213);
+}
+.page-header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.sub-text {
+    color: rgb(49, 40, 40);
+    font-size: larger;
+}
+
+/* GRID LAYOUT */
+.contact-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+    padding: 20px;
+}
+
+/* LEFT SECTION */
+.contact-info {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+/* RIGHT SECTION */
+.contact-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* FORM ELEMENTS */
+.contact-form input,
+.contact-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+/* TEXTAREA HEIGHT */
+.contact-form textarea {
+    height: 100px;
+}
+
+/* BUTTON */
+.contact-form button {
+    background-color: teal;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    margin-top: 15px;
+}
+
+.contact-form button:hover {
+    background-color: darkcyan;
+    cursor: pointer;
+}

@@ -1,0 +1,116 @@
+body {
+  margin: 20px;
+  font-family: Arial;
+  background-color: aquamarine;
+}
+
+.navbar {
+  background-color: salmon;
+  margin-bottom: 10px;
+  border-radius: 17px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 300px;
+  padding: 10px;
+  margin: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+  background-color: rgb(245, 146, 213);
+}
+
+.hero {
+  display: flex;
+  justify-content: center;  
+  align-items: center;       
+  height: 50vh;              
+  text-align: center;
+  background-color: white;
+}
+
+.hero-text h1 {
+  font-size: 80px;
+}
+
+.hero button {
+  margin: 30px;
+  padding: 18px;
+  background-color: salmon;
+  border-radius: 11px;
+  color: white;
+  border: none;
+  font-size: 20px;
+}
+
+.hero button:hover {
+  background-color: rgb(56, 59, 59);
+}
+
+.features {
+  margin-top: 20px;
+  overflow: hidden;
+  background-color: aquamarine;
+  padding: 10px 0;
+}
+
+.feature-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 10s linear infinite;
+}
+
+.feature {
+  background-color: white;
+  padding: 10px 30px;
+  margin: 0 20px;
+  white-space: nowrap;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.courses {
+  padding: 20px;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.card {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.card:hover {
+  background-color: lightgrey;
+}
+
+
+.footer {
+  background-color: salmon;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}

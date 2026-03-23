@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="lgin.css">
+</head>
+<body>
+
+      <div class="navbar">
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="course.html">Courses</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </div>
+
+
+    <div class="page-header">
+        <h1>Sign up</h1>
+        <p class="sub-text">Create your account</p>
+    </div>
+
+    <!-- FORM CONTAINER -->
+    <div class="form-container">
+
+        <form onsubmit="return validateForm()">
+
+            <input type="text" id="name" placeholder="Name"><br>
+
+            <input type="email" id="email" placeholder="Email"><br>
+
+            <input type="password" id="password" placeholder="Password"><br>
+
+            <input type="password" id="confirm" placeholder="Confirm Password"><br>
+
+            <button type="submit">Register</button>
+
+        </form>
+
+    </div>
+
+    <script>
+        function validateForm() {
+
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let password = document.getElementById("password").value;
+    let confirm = document.getElementById("confirm").value;
+
+    // empty fields
+    if (name === "" || email === "" || password === "" || confirm === "") {
+        alert("All fields are required");
+        return false;
+    }
+
+    // email format (basic)
+    if (!email.includes("@") || !email.includes(".")) {
+        alert("Enter a valid email");
+        return false;
+    }
+
+    // password length
+    if (password.length < 6) {
+        alert("Password must be at least 6 characters");
+        return false;
+    }
+
+    // match passwords
+    if (password !== confirm) {
+        alert("Passwords do not match");
+        return false;
+    }
+
+    alert("Registration Successful!");
+    return true;
+}
+    </script>
+
+</body>
+</html>

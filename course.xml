@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<courses xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="courses.xsd">
+
+    <course>
+        <title>Web Development</title>
+        <instructor>John Doe</instructor>
+        <price>2000</price>
+        <rating>4.5</rating>
+        <duration>3 Months</duration>
+    </course>
+
+    <course>
+        <title>Python Basics</title>
+        <instructor>Sarah</instructor>
+        <price>1500</price>
+        <rating>4.2</rating>
+        <duration>2 Months</duration>
+    </course>
+
+    <course>
+        <title>Data Structures</title>
+        <instructor>Mike</instructor>
+        <price>2500</price>
+        <rating>4.7</rating>
+        <duration>3 Months</duration>
+    </course>
+
+</courses>
